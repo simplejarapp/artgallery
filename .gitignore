@@ -1,0 +1,8 @@
+assets/
+bin/
+.classpath
+gen/
+.git/
+.project
+project.properties
+.settings/
