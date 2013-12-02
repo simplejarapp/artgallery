@@ -1,6 +1,7 @@
 package net.hyang.artgallery;
 
 import net.hyang.artgallery.lobby.gridlobby.GridLobby;
+import net.hyang.artgallery.lobby.interfaces.Lobby;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,7 +15,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         
         GridView gridView = (GridView) findViewById(R.id.lobby);
-        new GridLobby(this, gridView).present();
+        Lobby lobby = new GridLobby(this, gridView);
+        lobby.present();
     }
 
 
